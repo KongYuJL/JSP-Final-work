@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User center</title>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/publicStyle.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link href="css/user-center.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+   <%%>
+    <script>
+        //显示子菜单
+	    function showSubMenu(li){
+	        var subMenu = li.getElementsByTagName("ul")[0];
+	        subMenu.style.display = "block";
+	    }
+	
+	    //隐藏子菜单
+	    function hideSubMenu(li){
+	        var subMenu = li.getElementsByTagName("ul")[0];
+	        subMenu.style.display = "none";
+	    }
+    </script>
+    <header>
+            <nav class="nav-container">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="KAMA"> <span id="logo-text">KAMA WOODS</span>
+                    </a>
+                </div>
+                <div class="button-container">
+                    <ul class="nav-ul">
+                        <li><a href="comNewsList.html"><i class="fa fa-newspaper-o fa-fw"></i> 新闻资讯/News</a> </li>
+                        <li><a href="product.html"><i class="fa fa-tree fa-fw"></i> 产品展示/Products</a> </li>
+                        <li> <a href="customer.html"><i class="fa fa-flag fa-fw"></i> 客户案例/Cases</a> </li>
+                        <li><a href="contact.html"><i class="fa fa-map-marker fa-fw"></i> 联系我们/Contact us</a> </li>
+                        
+                        <!--
+                        <li id="user" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)">
+                        	<i class="fa fa-user-circle fa-fw"></i>
+                        <%if(session.getAttribute("username")==null){%>
+                        		登陆注册/Login&Register
+                        <%} else {%>
+                       			 欢迎：<%= session.getAttribute("username")%>!
+                       		<i class="fa fa-angle-down fa-fw"></i>
+                       		<ul class="drop menu">
+							     <li><a href="#">User center</a></li>
+							     <li class="menu-separator"></li>
+							     <li><a href="LogoutServlet">Log out</a></li>
+							</ul>
+                        <%}%>
+                        </li>
+                        -->
+                    </ul>
+                </div>
+            </nav>
+    </header>
+        
+    <!-- User information -->
+    <div class="w3-banner-top">
+        <div class="agileinfo-dot">
+            <div class="w3-banner-grids">
+                <div class="col-md-6 w3-banner-grid-left">
+                    <div class="w3-banner-img">
+                        <img src="images/ban661.jpg" alt="img">
+                        <h3 class="test">Chris Adam</h3>
+                        <p class="test" >Graphic designer</p>
+                    </div>
+                </div>
+                <div class="col-md-6 w3-banner-grid-right">
+                <div class="w3-banner-text">
+                    <h3>Description</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim velit sed nibh placerat, non aliquam purus pretium. Donec at justo dignissim, maximus elit et, vestibulum mi.</p>
+                </div>
+                    <div class=" w3-right-addres-1">
+                    <ul class="address">
+                                    <li>
+                                        <ul class="agileits-address-text ">
+                                            <li class="agile-it-adress-left"><b>User ID</b></li>
+                                            <li><span>:</span>21-08-1987</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="agileits-address-text">
+                                            <li class="agile-it-adress-left"><b>Reg. Date</b></li>
+                                            <li><span>:</span>(+000) 003 003 0052</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="agileits-address-text">
+                                            <li class="agile-it-adress-left"><b>E-mail</b></li>
+                                            <li><span>:</span><a href="mailto:example@mail.com"> info@example.com</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="agileits-address-text">
+                                            <li class="agile-it-adress-left"><b>Last login IP</b></li>
+                                            <li><span>:</span><a href="#">www.myresume.com</a></li>
+                                        </ul>
+                                    </li>
+                                </ul> 
+
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            </div>
+	</div>
+    <!-- Footer -->
+
+    <div id="footer">
+        <div class="footerTop">
+            <div class="top">
+                <ul class="column">
+                    <li>About Company</li>
+                    <li><a href="#comInf">Company</a></li>
+                    <li><a href="#comDis">Stores</a></li>
+                </ul>
+                <ul class="column">
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="product.html">North America Series</a></li>
+                    <li><a href="product.html">European Series</a></li>
+                    <li><a href="product.html">Dyeing Series</a></li>
+                </ul>
+                <ul class="column">
+                    <li><a href="comNewsList.html">News</a></li>
+                    <li><a href="comNewsList.html">Comany news</a></li>
+                    <li><a href="">Trade news</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <ul class="column">
+                    <li><a href="customer.html">Cases show</a></li>
+                </ul>
+                <ul class="column">
+                    <li><a href="#partner">Partners</a></li>
+                </ul>
+
+                <ul class="column">
+                    <li><a href="contact.html">Contacts</a></li>
+                    <ul>
+                        <li>ADD: No.2~20, B9, Orient Xingye City, HouJie Town,Dongguan City, Guangdong, China.</li>
+                        <li>TEL: 0769-82906000</li>
+                        <li>FAX: 0769-82900010</li>
+                        <li>E-mail: kamawoods@163.com</li>
+                    </ul>
+                    <ul>
+                        <li>ADD: #111, 11Building, Orient Xingye City, Weitang Street, Jiashan, Jiaxing City, Zhejiang, China.</li>
+                        <li>TEL: 0573-84616000</li>
+                        <li>FAX: 0573-84616000</li>
+                    </ul>
+                    <ul>
+                        <li>ADD: No.61~64, B2, YunKai Market, Xinfan Town,Xindu Area, Chengdu City, Xichuan, China.</li>
+                        <li>TEL: 028-64121277</li>
+                        <li>FAX: 028-64121500</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="footerLogo">
+                <img src="images/logo-white.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestiae porro provident non dolor, dolore ab commodi illum nesciunt nostrum sunt adipisci recusandae rem minima suscipit modi mollitia, voluptatibus, aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officia esse expedita non sunt voluptatem, quibusdam provident vel adipisci dolor magnam necessitatibus fuga deserunt.<a href="#comInf">More Details</a></p>
+
+            </div>
+        </div>
+        <div class="recordInf">
+            <p>&copy; 2018 www.kamawoods.com</p>
+            <p>@ Kama Industrial Co., Ltd. of Dongguan City IPC record 粤165410011</p>
+            <p>Developed by Joel Josan</p>
+        </div>
+    </div>
+</body>
+</html>

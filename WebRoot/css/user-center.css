@@ -1,0 +1,104 @@
+/*-- banner --*/
+.w3-banner-top{
+    background: url(../images/ban6666.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    margin-top: 9.4vh;
+    position: relative;
+}
+.agileinfo-dot{
+    background: url(../images/dott.png)repeat 0px 0px;
+    background-size: 2px;
+    -webkit-background-size: 2px;
+    -moz-background-size: 2px;
+    -o-background-size: 2px;
+    -ms-background-size: 2px;
+	min-height: 1240px;
+}
+.col-md-6.w3-banner-grid-left {
+    margin-left: 6%;
+    margin-top: 8%;
+    width: 40%;
+    float: left;
+}
+.col-md-6.w3-banner-grid-right{
+    width: 25%;
+    float: left;
+}
+.w3-banner-img {
+    text-align: center;
+}
+ul.address {
+    margin-top: 1.5em;
+      border-top: 2px dotted #00bcd4;
+    padding-top: 0.5em;
+}
+ul.address li ul.agileits-address-text li {
+    display: inline-block;
+    font-size: 1em;
+    color:rgba(255, 255, 255, 0.76);
+    margin-top: 1em;
+    font-weight: 600;
+    font-family: 'Text Me One', sans-serif;
+}
+ul.address li ul.agileits-address-text li:nth-child(1) {
+    width: 20%;
+}
+.w3-banner-grids {
+    padding: 12em 0 0 0;
+}
+.w3-banner-img img {
+    width: 133px;
+    height: 133px;
+    border-radius: 50%;
+}
+.w3-right-addres-1 li {
+    list-style-type: none;
+}
+.w3-banner-text p {
+    width: 85%;
+}
+ul.agileits-address-text li a {
+    color:rgba(255, 255, 255, 0.76);
+}
+.w3-banner-img h3 {
+    color: #fff;
+    font-size: 2.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+        letter-spacing:1px;
+   font-family: 'Raleway', sans-serif;
+}
+.w3-banner-img p {
+    color: #ffc53e;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.w3-banner-grid-right h3 {
+      font-size: 3em;
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.w3-banner-grid-right p {
+    color:#f5f2f2;
+    font-size: 1em;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+    margin-top: 1em;
+}
+ul.agileits-address-text li span {
+    margin: 0.2em;
+    color: #d9edf7;
+}
+.w3-banner-img {
+  border: 5px solid rgba(238, 238, 238, 0.53);
+    width: 263px;
+    height: 263px;
+    padding: 63px;
+    margin: 0 auto;
+}
+li.agile-it-adress-left b {
+    color: #fff;
+}
